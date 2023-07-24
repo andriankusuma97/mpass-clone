@@ -1,0 +1,31 @@
+<loading type="spin" size="x-large" className="inlineBlock" color="#1677ff" a:if="{{ news.length == 0 || isLoading == true }}" />
+<view  class="container" a:if="{{ isLoading == false }}" >
+  <view class="header"> 
+    <view class="header-content">
+      <view>
+        <icon type="success"  />
+      </view>
+      <view> Sehat Negeriku </view>
+      <view>  <icon type="success"  /> </view>
+    </view>
+  </view>
+
+  <view class="content">
+    <view class="card-news" a:for="{{news}}" onTap="detail" data-url="{{item.url}}" >
+      <view class="section-image">
+        <image class="image"
+        src="{{item.image}}" onError="imageError" onLoad="imageLoad" />
+      </view>
+      <view class="section-title">
+        
+        <text>{{item.title}}</text>
+        <view class="createdby" >
+          <text>BY:{{item.author}}</text>
+          <text>{{item.publish_date}}</text>
+          <text>comment-{{item.sentiment}}</text>
+        </view>
+      </view>
+    </view>
+  </view>
+  <pagination class="pagination-container" arrow prevText="Prev" nextText="Next" total="{{totalPages}}" current="{{pageNumber}}" onChange="showPage" />
+</view>

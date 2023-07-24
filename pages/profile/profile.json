@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "loading": "antd-mini/es/Loading/index",
+    "modal": "antd-mini/es/Modal/index",
+    "button": "antd-mini/es/Button/index",
+    "icon": "antd-mini/es/Icon/index"
+  },
+  "transparentTitle":"always"
+}

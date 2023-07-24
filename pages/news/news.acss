@@ -1,0 +1,74 @@
+.container {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+.inlineBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  color: black;
+  margin-top: 400px;
+  margin-left: 40%;
+  font-size: 45px;
+}
+.header {
+  background: linear-gradient(135deg, rgba(69,117,235,1) 0%, rgba(208,218,219,1) 27%, rgba(243,244,245,1) 89%);
+  height: 100px;
+  display: flex;
+  flex-direction: column-reverse;
+ 
+  padding-bottom: 5px;
+  color: rgb(8, 1, 1);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+
+.header-content{
+  display: flex;
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin: 5px 20px;
+}
+
+.content{
+  margin-top: 115px;
+  background: white;
+  padding: 10px 20px;
+  flex: 1;
+}
+
+.card-news{
+  display: flex;
+  flex-direction: row;
+  margin-top: 10px;
+}
+
+.image{
+  width: 100px;
+  height: 80px;
+  border-radius: 10px;
+  box-shadow: 2px 2px 5px 2px lightblue;
+}
+
+.section-title{
+  padding: 5px 10px;
+}
+
+.createdby{
+  margin-top: 5px;
+  display: grid;
+  grid: auto / auto auto auto;
+  font-size: 11px;
+}
+
+.pagination-container {
+  position: sticky;
+  bottom: 0;
+}

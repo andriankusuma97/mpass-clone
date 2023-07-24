@@ -1,0 +1,49 @@
+{
+  "subPackageBuildType": "shared",
+  "pages": [
+    "pages/index/index",
+    "pages/detail/index",
+    "pages/news/news",
+    "pages/profile/profile",
+    "pages/fitur/fitur",
+    "pages/news-detail/index"
+  ],
+  "window": {
+    "pullRefresh": false,
+    "allowsBounceVertical": "YES",
+    "titleBarColor": "#ffffff"
+    
+  },
+  "tabBar": {
+    "textColor": "#404040",
+    "selectedColor": "#108ee9",
+    "backgroundColor": "#F5F5F9",
+    "items": [
+      {
+        "pagePath": "pages/index/index",
+        "icon": "images/home1.png",
+        "activeIcon": "images/home-active.png",
+        "name": "Beranda"
+      },
+      {
+        "pagePath": "pages/fitur/fitur",
+        "icon": "images/feature-passive.png",
+        "activeIcon": "images/feature-active.png",
+        "name": "Fitur"
+      },
+      {
+        "pagePath": "pages/news/news",
+        "icon": "images/news-passive.png",
+        "activeIcon": "images/news-active.png",
+        "name": "Berita"
+      },
+      {
+        "pagePath": "pages/profile/profile",
+        "icon": "images/profile-passive.png",
+        "activeIcon": "images/profile-active.png",
+        "name": "Profil"
+      }
+     
+    ]
+  }
+}

@@ -1,0 +1,140 @@
+<modal
+  visible="{{basicVisible}}"
+  onClose="handleClose"
+  primaryButtonText="form data"
+  onPrimaryButtonTap="handlePrimaryButtonTap"
+> 
+  <view class="bodyModal">
+    <view class="body">
+      <image mode="scaleToFill" src="/images/barcode.png" class="bodyImg"/>
+      <view class="bodyAction"><icon type="CloseCircleOutline" onTap="handleClose"/></view>
+    </view>
+  </view>
+</modal>
+<view class="container">
+
+  <view class="header"> 
+    <view> Profile </view>
+  </view>
+  
+  <view class="content" > 
+    <view class="card-profile">
+      
+      <view class="profile-top"  >
+        <view class="photo-profile" >
+          <loading type="mini" size="x-large" className="inlineBlock" color="#1677ff" a:if="{{ isLoading == true }}" />
+          <image class="image" a:if="{{ isLoading == false }}"
+           src="{{profile.photo}}" onError="imageError" onLoad="imageLoad" />
+        </view>
+        <view class="title-profile" >
+          <loading type="mini" size="x-large" className="inlineBlock" color="#1677ff" a:if="{{ isLoading == true }}" />
+          <text a:if="{{ isLoading == false }}" > {{profile.name}} </text>
+          <view a:if="{{ isLoading == false }}" > 
+            <icon type="info" size="17"/>
+            <text class="text-title">  {{profile.phone}}</text>
+          </view>
+          <view a:if="{{ isLoading == false }}" > 
+            <icon type="info" size="17"/>
+            <text class="text-title">  {{profile.idCard}} </text>
+          </view>
+        </view>
+      </view>
+  
+      <view class="profile-buttom"  >
+        <view class="barcode" > 
+          <image class="barcode-image"
+           src="{{profile.barcode}}" onError="imageError" onLoad="imageLoad" />
+          <text> Kode identitas </text>
+        </view>
+  
+        <view onTap="handleOpen" data-field="basicVisible" >
+          <image class="arrow"
+          src="/images/right-arrow.png" onError="imageError"   onLoad="imageLoad" />
+        </view>
+        
+      </view>
+  
+    </view>
+  
+    <view class="banner-vaksin">
+      <view class="banner-top"> 
+        <view class="banner-text" > 
+          <text> Kartu status Vaksin dan </text>
+          <text> Hasil Tes Covid-19 </text>
+        </view>
+        <view style="margin-top:30px"> 
+          <text>{{profile.name}} </text>
+        </view>
+      </view>
+    </view>
+  
+    <view class="informasi">
+     <text> Informasi Umum </text>
+     <view class="card-informasi"> 
+      <view class="informasi-detail" >
+        <view class="informasi-text" > 
+          <image class="arrow"
+        src="/images/icon-user.png" onError="imageError" onLoad="imageLoad" />
+          <text> Profile Tertaut </text>
+        </view>
+        <image class="arrow"
+        src="/images/right-arrow.png" onError="imageError" onLoad="imageLoad" />
+      </view>
+      <view class="informasi-detail" >
+        <view class="informasi-text" > 
+          <image class="arrow"
+        src="/images/faq.png" onError="imageError" onLoad="imageLoad" />
+          <text> FAQ </text>
+        </view>
+        <image class="arrow"
+        src="/images/right-arrow.png" onError="imageError" onLoad="imageLoad" />
+      </view>
+      <view class="informasi-detail" >
+        <view class="informasi-text" > 
+          <image class="arrow"
+        src="/images/phone.png" onError="imageError" onLoad="imageLoad" />
+          <text> Kontak Darurat</text>
+        </view>
+        <image class="arrow"
+        src="/images/right-arrow.png" onError="imageError" onLoad="imageLoad" />
+      </view>
+      <view class="informasi-detail" >
+        <view class="informasi-text" > 
+          <image class="arrow"
+        src="/images/info.png" onError="imageError" onLoad="imageLoad" />
+          <text> Tentang </text>
+        </view>
+        <image class="arrow"
+        src="/images/right-arrow.png" onError="imageError" onLoad="imageLoad" />
+      </view>
+     </view>
+    </view>
+  
+  
+    <view class="informasi">
+     <text> Preferensi </text>
+     <view class="card-informasi"> 
+      <view class="informasi-detail" >
+        <view class="informasi-text" > 
+          <image class="arrow"
+        src="/images/language.png" onError="imageError" onLoad="imageLoad" />
+          <text> Bahasa </text>
+        </view>
+        <image class="arrow"
+        src="/images/right-arrow.png" onError="imageError" onLoad="imageLoad" />
+      </view>
+      <view class="informasi-detail" >
+        <view class="informasi-text" > 
+          <image class="arrow"
+        src="/images/logout.png" onError="imageError" onLoad="imageLoad" />
+          <text> Keluar </text>
+        </view>
+        <image class="arrow"
+        src="/images/right-arrow.png" onError="imageError" onLoad="imageLoad" />
+      </view>
+     </view>
+    </view>
+  </view>
+ 
+
+</view>

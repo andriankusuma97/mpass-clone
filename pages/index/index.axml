@@ -1,0 +1,52 @@
+
+<view class="container" >
+  <view class="header"> 
+    <view> Hallo, Admin </view>
+  </view>
+
+  <view class="content">
+    <view class="card-title">
+      <view class="text-banner-title" >
+       
+      </view>
+      
+    </view>
+  
+    <view class="card-fitur">
+      <text> Fitur </text>
+      
+      <view class="fitur-icon"  >
+        <view class="icon-1" a:for="{{fitur}}" onTap="detail" data-id="{{item.id}}" > 
+          <loading type="mini" size="x-large" className="inlineBlock" color="#1677ff" a:if="{{ isLoading == true }}" />
+          <icon type="{{item.type}}" size="45"  a:if="{{ isLoading == false }}" />
+          <text  a:if="{{ isLoading == false }}" > {{item.name}} </text>
+        </view>
+      </view>
+    </view>
+  
+    <view class="swiper" >
+      <swiper
+              indicator-dots="{{indicatorDots}}"
+              autoplay="{{autoplay}}"
+              
+              interval="{{interval}}"
+      >
+      <swiper-item key="swiper-item-{{index}}" a:for="{{array}}">
+          <view  class="swiper-item" >
+            <image class="image"
+              data-name="{{item.mode}}"
+              onTap="onTap"
+              mode="{{item.mode}}" src="{{item.src}}" onError="imageError" onLoad="imageLoad" />
+          </view>
+      </swiper-item>
+      </swiper>
+      
+    </view>
+  
+    
+  </view>
+
+  
+  
+  
+</view>

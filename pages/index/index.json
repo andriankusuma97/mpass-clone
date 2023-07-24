@@ -1,0 +1,7 @@
+{
+  "transparentTitle":"always",
+  "usingComponents": {
+    "loading": "antd-mini/es/Loading/index"
+  }
+
+}

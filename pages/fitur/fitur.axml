@@ -1,0 +1,20 @@
+<view class="container">
+  <view class="swiper" >
+    <swiper
+            indicator-dots="{{indicatorDots}}"
+            autoplay="{{autoplay}}"
+            
+            interval="{{interval}}"
+    >
+    <swiper-item key="swiper-item-{{index}}" a:for="{{array}}">
+        <view  class="swiper-item" >
+          <image class="image"
+            data-name="{{item.mode}}"
+            onTap="onTap"
+            mode="{{item.mode}}" src="{{item.src}}" onError="imageError" onLoad="imageLoad" />
+        </view>
+    </swiper-item>
+    </swiper>
+    
+  </view>
+</view>

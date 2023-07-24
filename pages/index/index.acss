@@ -1,0 +1,98 @@
+.inlineBlock {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  justify-items: center;
+  text-align: center;
+  color: black;
+  font-size: 45px;
+}
+.container {
+  background:linear-gradient(135deg, rgba(69,117,235,1) 1%, rgba(208,218,219,1) 13%, rgba(255,255,255,1) 34%);
+}
+.header {
+  background: linear-gradient(135deg, rgba(69,117,235,1) 0%, rgba(208,218,219,1) 27%, rgba(243,244,245,1) 89%);
+  height: 100px;
+  display: flex;
+  flex-direction: column-reverse;
+  padding: 5px 20px;
+  color: rgb(8, 1, 1);
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 20px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+}
+.content{
+  padding-top: 100px;
+}
+.form-survey {
+  background: #edf1f6;
+  margin:10px 20px;
+}
+.card-title{
+  margin: 20px;
+  width: 300px;
+  height: 100px;
+  padding: 15px;
+  background-color: #edf1f6;
+  box-shadow: 10px 10px 5px 2px lightblue;
+  border-radius: 20px;
+  background-image: url("https://cdn.pmjnews.com/3/7/8/4/5/aplikasi_peduli_lindungi_840x576.jpg");
+  background-position: right;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.text-banner-title {
+  display: flex;
+  flex-direction: column;
+  gap: 35px;
+}
+
+.card-fitur{
+  padding: 10px 20px;
+  
+}
+
+.fitur-icon{
+  display: grid;
+  grid-template-columns: auto auto auto;
+  gap: 20px;
+}
+.icon-1{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  border-radius: 20px;
+}
+
+.icon-news{
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  border-radius: 20px;
+  
+}
+
+
+
+.swiper {
+  margin:20px;
+}
+
+.swiper-item{
+  display: block;
+  height: 150px;
+  
+}
+
+.margin-t {
+  margin-top: 24px;
+}
+
+.image {
+  width: 400px;
+  height: 150px;
+  border-radius: 20px;
+}

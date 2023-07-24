@@ -1,0 +1,29 @@
+
+.container{
+  display: flex;
+  flex-direction: column;
+  background: yellow;
+  height: 810px;
+  margin: 0;
+}
+.swiper {
+  background: red;
+  height: 100%;
+}
+
+.swiper-item{
+  display: block;
+  height: 810px;
+
+  
+}
+
+.margin-t {
+  margin-top: 24px;
+}
+
+.image {
+  width: 400px;
+  height: 100%;
+  border-radius: 20px;
+}
