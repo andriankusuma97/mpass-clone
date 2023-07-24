@@ -24,7 +24,7 @@
         <view class="photo-profile" >
           <loading type="mini" size="x-large" className="inlineBlock" color="#1677ff" a:if="{{ isLoading == true }}" />
           <image class="image" a:if="{{ isLoading == false }}"
-           src="{{profile.photo}}" onError="imageError" onLoad="imageLoad" />
+           src="{{profile.photo}}"  />
         </view>
         <view class="title-profile" >
           <loading type="mini" size="x-large" className="inlineBlock" color="#1677ff" a:if="{{ isLoading == true }}" />
@@ -43,13 +43,13 @@
       <view class="profile-buttom"  >
         <view class="barcode" > 
           <image class="barcode-image"
-           src="{{profile.barcode}}" onError="imageError" onLoad="imageLoad" />
+           src="{{profile.barcode}}"  />
           <text> Kode identitas </text>
         </view>
   
         <view onTap="handleOpen" data-field="basicVisible" >
           <image class="arrow"
-          src="/images/right-arrow.png" onError="imageError"   onLoad="imageLoad" />
+          src="/images/right-arrow.png"  />
         </view>
         
       </view>
@@ -74,38 +74,38 @@
       <view class="informasi-detail" >
         <view class="informasi-text" > 
           <image class="arrow"
-        src="/images/icon-user.png" onError="imageError" onLoad="imageLoad" />
+        src="/images/icon-user.png" />
           <text> Profile Tertaut </text>
         </view>
         <image class="arrow"
-        src="/images/right-arrow.png" onError="imageError" onLoad="imageLoad" />
+        src="/images/right-arrow.png"  />
       </view>
       <view class="informasi-detail" >
         <view class="informasi-text" > 
           <image class="arrow"
-        src="/images/faq.png" onError="imageError" onLoad="imageLoad" />
+        src="/images/faq.png"  />
           <text> FAQ </text>
         </view>
         <image class="arrow"
-        src="/images/right-arrow.png" onError="imageError" onLoad="imageLoad" />
+        src="/images/right-arrow.png"  />
       </view>
       <view class="informasi-detail" >
         <view class="informasi-text" > 
           <image class="arrow"
-        src="/images/phone.png" onError="imageError" onLoad="imageLoad" />
+        src="/images/phone.png"  />
           <text> Kontak Darurat</text>
         </view>
         <image class="arrow"
-        src="/images/right-arrow.png" onError="imageError" onLoad="imageLoad" />
+        src="/images/right-arrow.png"  />
       </view>
       <view class="informasi-detail" >
         <view class="informasi-text" > 
           <image class="arrow"
-        src="/images/info.png" onError="imageError" onLoad="imageLoad" />
+        src="/images/info.png"  />
           <text> Tentang </text>
         </view>
         <image class="arrow"
-        src="/images/right-arrow.png" onError="imageError" onLoad="imageLoad" />
+        src="/images/right-arrow.png"  />
       </view>
      </view>
     </view>
@@ -117,20 +117,20 @@
       <view class="informasi-detail" >
         <view class="informasi-text" > 
           <image class="arrow"
-        src="/images/language.png" onError="imageError" onLoad="imageLoad" />
+        src="/images/language.png"  />
           <text> Bahasa </text>
         </view>
         <image class="arrow"
-        src="/images/right-arrow.png" onError="imageError" onLoad="imageLoad" />
+        src="/images/right-arrow.png"  />
       </view>
       <view class="informasi-detail" >
         <view class="informasi-text" > 
           <image class="arrow"
-        src="/images/logout.png" onError="imageError" onLoad="imageLoad" />
+        src="/images/logout.png"  />
           <text> Keluar </text>
         </view>
         <image class="arrow"
-        src="/images/right-arrow.png" onError="imageError" onLoad="imageLoad" />
+        src="/images/right-arrow.png"  />
       </view>
      </view>
     </view>

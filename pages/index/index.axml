@@ -36,7 +36,7 @@
             <image class="image"
               data-name="{{item.mode}}"
               onTap="onTap"
-              mode="{{item.mode}}" src="{{item.src}}" onError="imageError" onLoad="imageLoad" />
+              mode="{{item.mode}}" src="{{item.src}}"  />
           </view>
       </swiper-item>
       </swiper>

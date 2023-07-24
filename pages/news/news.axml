@@ -14,7 +14,7 @@
     <view class="card-news" a:for="{{news}}" onTap="detail" data-url="{{item.url}}" >
       <view class="section-image">
         <image class="image"
-        src="{{item.image}}" onError="imageError" onLoad="imageLoad" />
+        src="{{item.image}}"  />
       </view>
       <view class="section-title">
         
